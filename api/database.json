@@ -22,47 +22,23 @@
       "name": "Howdy Doody Ziplines",
       "description": "Employees string you up like a puppet and you ride on a 300ft. zipline",
       "cost": "200.00",
-      "review": "WEEEEEEEEEE!!!!!!!!!!",
+      "review": "WEEEEEEEEEE!!!!!!!",
       "placeId": 2
     },
     {
       "id": 9,
       "name": "Wine Drunk Tours",
       "description": "You start by drinking 3 bottles of wine and then go on a multi-city tour of France.",
-      "cost": "50.35",
+      "cost": "60.35",
       "review": "I can't remember any of it.",
       "placeId": 3
     },
     {
       "id": 11,
-      "name": "The Turtle Garage",
-      "description": "A garage full of turtles",
+      "name": "The Turtle Garage Café",
+      "description": "A garage full of turtles that serve as your wait staff.",
       "cost": "30.00",
       "review": "Service was a little slow.",
-      "placeId": 1
-    },
-    {
-      "id": 12,
-      "name": "Monkey House",
-      "description": "This is a house full of monkies",
-      "cost": "10.50",
-      "review": "I loved it.",
-      "placeId": 2
-    },
-    {
-      "id": 13,
-      "name": "DDDDD",
-      "description": "a;glkahs;glha;lskg",
-      "cost": "235235",
-      "review": "",
-      "placeId": 1
-    },
-    {
-      "id": 14,
-      "name": "DDDDDDD",
-      "description": "a;lsgkha;lsgkh",
-      "cost": "346346",
-      "review": "",
       "placeId": 1
     }
   ]

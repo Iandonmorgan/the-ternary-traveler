@@ -24,7 +24,7 @@ const captureInputData = () => {
     const poiLocationField = document.getElementById("poiLocation");
 
     const poiEntryData = poiEntry(parseInt(poiIdField.value), poiNameField.value, poiDescriptionField.value, poiCostField.value, poiReviewField.value, parseInt(poiLocationField.value));
-    if (poiEntryData.name !== "" && poiEntryData.description !== "") {
+    if (poiEntryData.name !== "" && poiEntryData.description !== "" && poiLocationField.value !== "") {
         if (event.target.id === "poiEntrySubmitBtn") {
             API.savePOIEntry(poiEntryData)
             .then(API.getLocations)
@@ -36,13 +36,15 @@ const captureInputData = () => {
             .then(API.getLocations)
             .then(parsedEntries.renderLocations)
             .then(API.getPOIEntries)
-            .then(parsedEntries.renderPOIs);
+            .then(parsedEntries.renderPOIs)
+            .then(entryHTML.clearPOIForm);
+            document.getElementById("poiEntryUpdateBtn").id = "poiEntrySubmitBtn";
+            document.getElementById("poiEntrySubmitBtn").value = "Save Point of Interest";
         }
     } else {
         window.alert("Please complete all required fields in the form prior to submitting.");
     }
     API.getPOIEntries().then(parsedEntries.renderPOIs);
-    entryHTML.clearPOIForm();
 }
 
 API.getLocations().then(parsedEntries.renderLocationOptions).then(parsedEntries.clearLocationOption);
