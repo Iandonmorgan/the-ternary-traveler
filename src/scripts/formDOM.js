@@ -3,7 +3,7 @@ const entryInput = {
         const poiEntry = document.getElementById("poiEntry");
         let entryFields =
         `<div id="poiEntryFields">
-        <input type="hidden" id="entryId" value="" />
+        <input type="hidden" id="poiId" value="" />
         <fieldset class="entryName">
             <legend>Point of Interest</legend>
             <input type="text" name="poiName" id="poiName">
@@ -14,7 +14,7 @@ const entryInput = {
         </fieldset>
         <fieldset class="entryCost">
             <legend>Cost</legend>
-            <input type="number" name="poiCost" id="poiCost">
+            <input type="number" name="poiCost" id="poiCost" value="0.00">
         </fieldset>
         <fieldset class="entryLocation">
             <legend>Location</legend>

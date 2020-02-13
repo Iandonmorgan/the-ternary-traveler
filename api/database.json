@@ -1,29 +1,69 @@
 {
-    "places": [
-      { 
-        "id": 1, 
-        "name": "Italy", 
-        "visa_required": false 
-      },
-      { 
-        "id": 2, 
-        "name": "Switzerland", 
-        "visa_required": true 
-      },
-      { 
-        "id": 3, 
-        "name": "France", 
-        "visa_required": false
-      }
-    ],
-    "interests": [
-        { 
-            "id": 1,
-            "placeId": 1,
-            "name": "Local Market",
-            "description": "Local market where you can purchase local products and try the local food",
-            "cost": 0.00,
-            "review": "" 
-        }
-    ]
-  }
+  "places": [
+    {
+      "id": 1,
+      "name": "Italy",
+      "visa_required": false
+    },
+    {
+      "id": 2,
+      "name": "Switzerland",
+      "visa_required": true
+    },
+    {
+      "id": 3,
+      "name": "France",
+      "visa_required": false
+    }
+  ],
+  "interests": [
+    {
+      "id": 6,
+      "name": "Howdy Doody Ziplines",
+      "description": "Employees string you up like a puppet and you ride on a 300ft. zipline",
+      "cost": "200.00",
+      "review": "WEEEEEEEEEE!!!!!!!!!!",
+      "placeId": 2
+    },
+    {
+      "id": 9,
+      "name": "Wine Drunk Tours",
+      "description": "You start by drinking 3 bottles of wine and then go on a multi-city tour of France.",
+      "cost": "50.35",
+      "review": "I can't remember any of it.",
+      "placeId": 3
+    },
+    {
+      "id": 11,
+      "name": "The Turtle Garage",
+      "description": "A garage full of turtles",
+      "cost": "30.00",
+      "review": "Service was a little slow.",
+      "placeId": 1
+    },
+    {
+      "id": 12,
+      "name": "Monkey House",
+      "description": "This is a house full of monkies",
+      "cost": "10.50",
+      "review": "I loved it.",
+      "placeId": 2
+    },
+    {
+      "id": 13,
+      "name": "DDDDD",
+      "description": "a;glkahs;glha;lskg",
+      "cost": "235235",
+      "review": "",
+      "placeId": 1
+    },
+    {
+      "id": 14,
+      "name": "DDDDDDD",
+      "description": "a;lsgkha;lsgkh",
+      "cost": "346346",
+      "review": "",
+      "placeId": 1
+    }
+  ]
+}
