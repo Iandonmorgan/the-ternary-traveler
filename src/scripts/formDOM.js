@@ -1,3 +1,9 @@
+/* 
+This file is irrelevant until code is refactored. When I tried to implement it, the code was broken
+because event listeners couldn't find classes and IDs intended.
+*/
+
+
 const entryInput = {
     poi() {
         const poiEntry = document.getElementById("poiEntry");

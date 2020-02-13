@@ -8,11 +8,14 @@ const entryMutate = {
         poiEntriesBtnListener.addEventListener("click", (event) => {
             if (event.target.id.startsWith("deleteEntry--")) {
                 const entryId = event.target.id.split("--")[1]
-                API.deletePOIEntry(entryId)
-                .then(API.getLocations)
-                .then(parsedEntries.renderLocations)
-                .then(API.getPOIEntries)
-                .then(parsedEntries.renderPOIs);
+                let question = confirm("Are you sure you want to delete this entry?");
+                if (question == true) {
+                    API.deletePOIEntry(entryId)
+                    .then(API.getLocations)
+                    .then(parsedEntries.renderLocations)
+                    .then(API.getPOIEntries)
+                    .then(parsedEntries.renderPOIs);
+                } 
             } else if (event.target.id.startsWith("editEntry--")) {
                 const entryTargetId = parseInt(event.target.id.split("--")[1]);
                 API.editPOIEntry(entryTargetId).then(entry => {
