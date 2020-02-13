@@ -13,6 +13,31 @@
         <h1>Mira's Travel Blog Tracker</h1>
     </header>
     <article id="poiEntry">
+        <div id="poiEntryFields">
+            <input type="hidden" id="poiId" value="" />
+            <fieldset class="entryName">
+                <legend>Point of Interest</legend>
+                <input type="text" name="poiName" id="poiName">
+            </fieldset>
+            <fieldset class="entryDescription">
+                <legend>Description</legend>
+                <textarea name="poiDescription" id="poiDescription" cols="48" rows="5"></textarea>
+            </fieldset>
+            <fieldset class="entryCost">
+                <legend>Cost</legend>
+                <input type="number" name="poiCost" id="poiCost" value="0.00">
+            </fieldset>
+            <fieldset class="entryReview">
+                <legend>Review</legend>
+                <textarea name="poiReview" id="poiReview" cols="48" rows="5"></textarea>
+            </fieldset>
+            <fieldset class="entryLocation">
+                <legend>Location</legend>
+                <select id="poiLocation">
+                </select>
+            </fieldset>
+            <input type="submit" id="poiEntrySubmitBtn" value="Save Point of Interest">
+        </div>
     </article>
     <hr>
     <article id="dataDisplay">
